@@ -44,6 +44,13 @@ export default function RootLayout({
     <RootProvider>
       <html lang="en">
         <body className={`${inter.variable} ${sourceCodePro.variable}`}>
+          {/* Global test banner */}
+          <div className="fixed bottom-3 left-1/2 -translate-x-1/2 z-[60]">
+            <div className="px-4 py-2 rounded-full bg-yellow-500/20 border border-yellow-400/40 text-yellow-100 backdrop-blur-md shadow-lg">
+              <span className="font-medium">Test version:</span> This build is a work in progress and not fully functional.
+            </div>
+          </div>
+
           <SafeArea>{children}</SafeArea>
         </body>
       </html>
