@@ -4,6 +4,7 @@ import { SafeArea } from "@coinbase/onchainkit/minikit";
 import { minikitConfig } from "../minikit.config";
 import { RootProvider } from "./rootProvider";
 import "./globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -52,6 +53,7 @@ export default function RootLayout({
           </div>
 
           <SafeArea>{children}</SafeArea>
+          <SpeedInsights />
         </body>
       </html>
     </RootProvider>
