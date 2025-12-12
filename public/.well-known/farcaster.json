@@ -9,7 +9,7 @@
       "0x69bb429ce2e3ECd3044BA17d1C5805eDD136D9db"
     ]
   },
-  "frame": {
+  "miniapp": {
     "version": "1",
     "name": "Skadi",
     "noindex": true,
