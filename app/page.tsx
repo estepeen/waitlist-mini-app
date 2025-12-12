@@ -121,19 +121,19 @@ export default function Home() {
       <div className="bg-white/5 backdrop-blur-md border-b border-white/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex space-x-1 py-2">
-            {tabs.map((tab) => {
-              const Icon = tab.icon;
-              const isActive = activeTab === tab.id;
-              return (
+                {tabs.map((tab) => {
+                  const Icon = tab.icon;
+                  const isActive = activeTab === tab.id;
+                  return (
                 <button
-                  key={tab.id}
+                      key={tab.id}
                   onClick={() => {
                     setActiveTab(tab.id);
                     // navigate to subpage
                     router.push(`/${tab.id}`);
                   }}
                   className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-200 ${
-                    isActive 
+                        isActive 
                       ? 'bg-white/20 text-white' 
                       : 'text-white/70 hover:text-white hover:bg-white/10'
                   }`}
@@ -213,7 +213,7 @@ export default function Home() {
                 </button>
               ))}
             </div>
-          </div>
+                        </div>
 
           {/* Market Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
@@ -222,7 +222,7 @@ export default function Home() {
               <div className="flex justify-between items-start mb-4">
                 <h3 className="text-white font-semibold text-sm leading-tight">
                   $BTC above $107,648.69 on Oct 6?
-                </h3>
+                          </h3>
                 <div className="bg-green-500/20 rounded-full px-2 py-1">
                   <span className="text-green-300 text-xs font-semibold">99.8%</span>
                 </div>
@@ -253,8 +253,8 @@ export default function Home() {
                     NO
                   </button>
                 </div>
-              </div>
-            </div>
+                        </div>
+                      </div>
 
             {/* F1 Constructors */}
             <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all">
@@ -293,13 +293,13 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-              </div>
+          </div>
 
               <div className="flex items-center justify-center gap-2 pt-2 border-t border-white/10">
                 <TrendingUp className="h-4 w-4 text-green-400" />
                 <span className="text-white font-semibold">5,164,344 USDC</span>
               </div>
-            </div>
+                        </div>
 
             {/* Another BTC Prediction */}
             <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all">
@@ -309,13 +309,13 @@ export default function Home() {
                 </h3>
                 <div className="bg-green-500/20 rounded-full px-2 py-1">
                   <span className="text-green-300 text-xs font-semibold">99.7%</span>
-                </div>
+                      </div>
               </div>
-              
+
               <div className="flex items-center gap-2 mb-4">
                 <Clock className="h-4 w-4 text-white/70" />
                 <span className="text-white/70 text-sm">13h:53m:13s</span>
-              </div>
+                      </div>
 
               <div className="flex items-center justify-center gap-2 mb-4">
                 <TrendingUp className="h-4 w-4 text-green-400" />
@@ -329,10 +329,10 @@ export default function Home() {
                 <button className="px-4 py-2 bg-red-500/20 text-red-300 rounded hover:bg-red-500/30 transition-colors">
                   NO
                 </button>
-              </div>
-            </div>
-          </div>
-        </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
 
         {/* Active Tab Content */}
         <div className="mb-8">
