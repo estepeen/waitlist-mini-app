@@ -1,0 +1,39 @@
+{
+  "accountAssociation": {
+    "header": "eyJmaWQiOjEzNDY0NTcsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHhjMDJFRjU0QTA3MzI3MWVEOUFCMDQ1NWQ4QmNCZjU2NGNCNjExMjJEIn0",
+    "payload": "eyJkb21haW4iOiJ3YWl0bGlzdC1taW5pLWFwcC1ndWxlcy52ZXJjZWwuYXBwIn0",
+    "signature": "MHhmZDNjZDUyYzlkNGM4Yzk2MmRjZmFmMjMxM2Y2OTViYjFkNjI1NWFiY2NhYjlhN2I5ZWQyZTQzMGY3ZmE1MDE3M2VkMzNkOGQ5NWVjMDU1YmJiOWQzZjA0MzIxZTdlZDg1MTQwNTIzMTYyZGM3MzY4MDFhMDVjN2U5MDBiOGFhMjFi"
+  },
+  "baseBuilder": {
+    "allowedAddresses": [
+      "0x69bb429ce2e3ECd3044BA17d1C5805eDD136D9db"
+    ]
+  },
+  "frame": {
+    "version": "1",
+    "name": "Skadi",
+    "noindex": true,
+    "subtitle": "The only crypto tool you need",
+    "description": "AI assistant for crypto",
+    "screenshotUrls": [
+      "https://waitlist-mini-app-gules.vercel.app/screenshot-portrait.png"
+    ],
+    "iconUrl": "https://waitlist-mini-app-gules.vercel.app/blue-icon.png",
+    "splashImageUrl": "https://waitlist-mini-app-gules.vercel.app/blue-hero.png",
+    "splashBackgroundColor": "#000000",
+    "homeUrl": "https://waitlist-mini-app-gules.vercel.app",
+    "webhookUrl": "https://waitlist-mini-app-gules.vercel.app/api/webhook",
+    "primaryCategory": "social",
+    "tags": [
+      "marketing",
+      "ads",
+      "quickstart",
+      "waitlist",
+      "nfts"
+    ],
+    "heroImageUrl": "https://waitlist-mini-app-gules.vercel.app/blue-hero.png",
+    "ogImageUrl": "https://waitlist-mini-app-gules.vercel.app/blue-hero.png"
+  }
+}
+
+
