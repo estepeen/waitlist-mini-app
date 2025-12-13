@@ -12,7 +12,8 @@
   "miniapp": {
     "version": "1",
     "name": "Skadi",
-    "noindex": true,
+    "tagline": "Your onchain crypto co-pilot",
+    "noindex": false,
     "subtitle": "The only crypto tool you need",
     "description": "AI assistant for crypto",
     "screenshotUrls": [
