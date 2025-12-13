@@ -25,12 +25,12 @@ export async function generateMetadata(): Promise<Metadata> {
       }),
       "fc:miniapp": JSON.stringify({
         version: "next",
-        imageUrl: "https://waitlist-mini-app-gules.vercel.app/screenshot-portrait.png",
+        imageUrl: "https://my-testing-miniapp.vercel.app/screenshot-portrait.png",
         button: {
           title: "Open App",
           action: {
             type: "launch_frame",
-            url: "https://waitlist-mini-app-gules.vercel.app/",
+            url: "https://my-testing-miniapp.vercel.app/",
           },
         },
       }),

@@ -17,13 +17,13 @@
     "subtitle": "The only crypto tool you need",
     "description": "AI assistant for crypto",
     "screenshotUrls": [
-      "https://waitlist-mini-app-gules.vercel.app/screenshot-portrait.png"
+      "https://my-testing-miniapp.vercel.app/screenshot-portrait.png"
     ],
-    "iconUrl": "https://waitlist-mini-app-gules.vercel.app/blue-icon.png",
-    "splashImageUrl": "https://waitlist-mini-app-gules.vercel.app/blue-hero.png",
+    "iconUrl": "https://my-testing-miniapp.vercel.app/blue-icon.png",
+    "splashImageUrl": "https://my-testing-miniapp.vercel.app/blue-hero.png",
     "splashBackgroundColor": "#000000",
-    "homeUrl": "https://waitlist-mini-app-gules.vercel.app",
-    "webhookUrl": "https://waitlist-mini-app-gules.vercel.app/api/webhook",
+    "homeUrl": "https://my-testing-miniapp.vercel.app",
+    "webhookUrl": "https://my-testing-miniapp.vercel.app/api/webhook",
     "primaryCategory": "social",
     "tags": [
       "marketing",
@@ -32,7 +32,7 @@
       "waitlist",
       "nfts"
     ],
-    "heroImageUrl": "https://waitlist-mini-app-gules.vercel.app/blue-hero.png",
-    "ogImageUrl": "https://waitlist-mini-app-gules.vercel.app/blue-hero.png"
+    "heroImageUrl": "https://my-testing-miniapp.vercel.app/blue-hero.png",
+    "ogImageUrl": "https://my-testing-miniapp.vercel.app/blue-hero.png"
   }
 }
