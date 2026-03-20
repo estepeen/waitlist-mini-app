@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Skadi",
   description: "AI assistant for crypto",
   other: {
-    "base:app_id": "69bd42ef8d299162030ce039",
+    "base:app_id": "693c6083e6be54f5ed71d805",
   },
 };
 
