@@ -1,21 +1,18 @@
 "use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { 
-  Users, 
-  Star, 
-  Lock, 
-  Palette, 
-  Gift, 
-  Vote, 
-  ShoppingCart, 
+import {
+  Users,
+  Star,
+  Lock,
+  Palette,
+  Gift,
+  Vote,
+  ShoppingCart,
   Trophy,
   X,
   Menu,
-  Sparkles,
-  Calendar,
-  Clock,
-  TrendingUp
+  Sparkles
 } from "lucide-react";
 
 export default function Home() {
@@ -48,7 +45,7 @@ export default function Home() {
                 <h1 className="text-2xl font-bold text-white">
                   Skadi
                 </h1>
-                <p className="text-xs text-white/70">AI Assistant for NFTs</p>
+                <p className="text-xs text-white/70">The only crypto tool you need</p>
               </div>
             </div>
             
@@ -142,7 +139,7 @@ export default function Home() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Hero Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
           {/* Points Card */}
           <div className="bg-gradient-to-br from-blue-500/20 to-purple-500/20 backdrop-blur-md border border-white/20 rounded-xl p-6">
             <div className="text-center">
@@ -175,157 +172,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Stats Card */}
-          <div className="bg-gradient-to-br from-orange-500/20 to-red-500/20 backdrop-blur-md border border-white/20 rounded-xl p-6">
-            <div className="text-center">
-              <div className="flex items-center justify-center mb-4">
-                <Calendar className="h-4 w-4 text-white/70 mr-2" />
-                <span className="text-white/70 text-sm">Ends on Oct 5, 2025</span>
-              </div>
-              <h3 className="text-white font-bold text-lg mb-2">Prediction Market</h3>
-              <p className="text-white/70 text-sm mb-4">Will Skadi reach 150M users by Oct 5?</p>
-              <div className="text-right">
-                <span className="text-2xl font-bold text-white">99.85%</span>
-                <p className="text-xs text-white/60">Confidence</p>
-              </div>
-            </div>
-          </div>
         </div>
 
-        {/* Main Content Section */}
-        <div className="mb-8">
-          <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-bold text-white">All Trending Markets</h2>
-            <div className="flex space-x-2">
-              {['Trending', 'Ending Soon', 'High Value', 'Newest', 'LP Rewards'].map((filter) => (
-                <button
-                  key={filter}
-                  className="px-3 py-1 text-sm text-white/70 hover:text-white hover:bg-white/10 rounded-lg transition-colors"
-                >
-                  {filter}
-                </button>
-              ))}
-            </div>
-                        </div>
-
-          {/* Market Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-            {/* BTC Price Prediction */}
-            <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all">
-              <div className="flex justify-between items-start mb-4">
-                <h3 className="text-white font-semibold text-sm leading-tight">
-                  $BTC above $107,648.69 on Oct 6?
-                          </h3>
-                <div className="bg-green-500/20 rounded-full px-2 py-1">
-                  <span className="text-green-300 text-xs font-semibold">99.8%</span>
-                </div>
-              </div>
-              
-              <div className="text-center mb-4">
-                <span className="text-3xl font-bold text-blue-400">99.85%</span>
-                <p className="text-white/60 text-sm">Chance</p>
-              </div>
-
-              {/* Mock Chart */}
-              <div className="h-16 bg-gradient-to-r from-blue-400/20 to-green-400/20 rounded-lg mb-4 flex items-end justify-center">
-                <div className="w-full h-full bg-gradient-to-r from-blue-500/30 to-green-500/30 rounded-lg flex items-center justify-center">
-                  <span className="text-white/50 text-xs">Chart</span>
-                </div>
-              </div>
-
-              <div className="flex justify-between items-center">
-                <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  <span className="text-white/70 text-xs">Operational</span>
-                </div>
-                <div className="flex gap-2">
-                  <button className="px-3 py-1 bg-green-500/20 text-green-300 rounded text-xs hover:bg-green-500/30 transition-colors">
-                    YES
-                  </button>
-                  <button className="px-3 py-1 bg-red-500/20 text-red-300 rounded text-xs hover:bg-red-500/30 transition-colors">
-                    NO
-                  </button>
-                </div>
-                        </div>
-                      </div>
-
-            {/* F1 Constructors */}
-            <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all">
-              <h3 className="text-white font-semibold mb-4">F1 Constructors Champion</h3>
-              
-              <div className="space-y-3 mb-4">
-                <div className="flex justify-between items-center">
-                  <span className="text-white/70 text-sm">McLaren</span>
-                  <div className="flex items-center gap-2">
-                    <span className="text-white font-semibold">99.3%</span>
-                    <div className="flex gap-1">
-                      <button className="px-2 py-1 bg-green-500/20 text-green-300 rounded text-xs">YES</button>
-                      <button className="px-2 py-1 bg-red-500/20 text-red-300 rounded text-xs">NO</button>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="flex justify-between items-center">
-                  <span className="text-white/70 text-sm">Other</span>
-                  <div className="flex items-center gap-2">
-                    <span className="text-white font-semibold">0.4%</span>
-                    <div className="flex gap-1">
-                      <button className="px-2 py-1 bg-green-500/20 text-green-300 rounded text-xs">YES</button>
-                      <button className="px-2 py-1 bg-red-500/20 text-red-300 rounded text-xs">NO</button>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="flex justify-between items-center">
-                  <span className="text-white/70 text-sm">Red Bull Racing</span>
-                  <div className="flex items-center gap-2">
-                    <span className="text-white font-semibold">0.2%</span>
-                    <div className="flex gap-1">
-                      <button className="px-2 py-1 bg-green-500/20 text-green-300 rounded text-xs">YES</button>
-                      <button className="px-2 py-1 bg-red-500/20 text-red-300 rounded text-xs">NO</button>
-                    </div>
-                  </div>
-                </div>
-          </div>
-
-              <div className="flex items-center justify-center gap-2 pt-2 border-t border-white/10">
-                <TrendingUp className="h-4 w-4 text-green-400" />
-                <span className="text-white font-semibold">5,164,344 USDC</span>
-              </div>
-                        </div>
-
-            {/* Another BTC Prediction */}
-            <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-all">
-              <div className="flex justify-between items-start mb-4">
-                <h3 className="text-white font-semibold text-sm leading-tight">
-                  $BTC above $109,891.37 on Oct 6?
-                </h3>
-                <div className="bg-green-500/20 rounded-full px-2 py-1">
-                  <span className="text-green-300 text-xs font-semibold">99.7%</span>
-                      </div>
-              </div>
-
-              <div className="flex items-center gap-2 mb-4">
-                <Clock className="h-4 w-4 text-white/70" />
-                <span className="text-white/70 text-sm">13h:53m:13s</span>
-                      </div>
-
-              <div className="flex items-center justify-center gap-2 mb-4">
-                <TrendingUp className="h-4 w-4 text-green-400" />
-                <span className="text-white font-semibold">166,112 USDC</span>
-              </div>
-
-              <div className="flex gap-2 justify-center">
-                <button className="px-4 py-2 bg-green-500/20 text-green-300 rounded hover:bg-green-500/30 transition-colors">
-                  YES
-                </button>
-                <button className="px-4 py-2 bg-red-500/20 text-red-300 rounded hover:bg-red-500/30 transition-colors">
-                  NO
-                </button>
-                        </div>
-                        </div>
-                      </div>
-                    </div>
 
         {/* Active Tab Content */}
         <div className="mb-8">
