@@ -1,8 +1,6 @@
 "use client";
-import { useState, useEffect } from "react";
-import { sdk } from '@farcaster/miniapp-sdk'
+import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { minikitConfig } from "../minikit.config";
 import { 
   Users, 
   Star, 
@@ -24,11 +22,6 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState("waitlist");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const router = useRouter();
-
-  // Initialize the Farcaster miniapp
-  useEffect(() => {
-    sdk.actions.ready();
-  }, []);
 
   const tabs = [
     { id: "waitlist", label: "Waitlist", icon: Users, color: "bg-blue-500", description: "Join the community" },
@@ -53,7 +46,7 @@ export default function Home() {
               </div>
               <div>
                 <h1 className="text-2xl font-bold text-white">
-                  {minikitConfig.frame.name}
+                  Skadi
                 </h1>
                 <p className="text-xs text-white/70">AI Assistant for NFTs</p>
               </div>
