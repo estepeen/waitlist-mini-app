@@ -7,6 +7,9 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 export const metadata: Metadata = {
   title: "Skadi",
   description: "AI assistant for crypto",
+  other: {
+    "base:app_id": "69bd42ef8d299162030ce039",
+  },
 };
 
 const inter = Inter({
